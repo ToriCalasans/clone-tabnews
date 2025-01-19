@@ -13,3 +13,25 @@ git log --stat
 git status
 git diff
 git commit --amend
+Escreva sua mensagem de commit:
+
+Adicione a mensagem de commit diretamente no editor que abriu no terminal. Certifique-se de que não está apagando ou alterando linhas que começam com # (comentários gerados automaticamente).
+Salvar e sair do editor (Vim):
+
+Pressione Esc para garantir que você está no modo normal do Vim.
+Digite :wq (sem aspas):
+:w salva as alterações.
+:q fecha o editor.
+Pressione Enter.
+Concluir o commit:
+
+Após fechar o editor, o Git processará o commit normalmente.
+Se você não gosta de usar o Vim como editor padrão, você pode configurá-lo para abrir o editor gráfico do VS Code diretamente. Para isso:
+
+Alterar o editor padrão do Git para o VS Code
+No terminal, digite:
+bash
+Copiar
+Editar
+git config --global core.editor "code --wait"
+Agora, quando você executar um git commit, o VS Code será aberto como editor gráfico. Faça as alterações no arquivo que aparece, salve (Ctrl+S) e feche o arquivo (Ctrl+W), e o commit será concluído.
