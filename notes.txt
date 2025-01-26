@@ -13,6 +13,7 @@ git log --stat
 git status
 git diff
 git commit --amend
+git commit --force ou git commit -f
 Escreva sua mensagem de commit:
 
 Adicione a mensagem de commit diretamente no editor que abriu no terminal. Certifique-se de que não está apagando ou alterando linhas que começam com # (comentários gerados automaticamente).

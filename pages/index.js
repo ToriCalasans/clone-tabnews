@@ -1,4 +1,7 @@
 function Home() {
-  return <h1>Estou evoluindo</h1>;
+  return;
+  <div>
+    <h1>Olá mundo</h1>
+  </div>;
 }
 export default Home;
