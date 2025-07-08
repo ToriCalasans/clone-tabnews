@@ -1,13 +1,13 @@
-test("nome do teste", callbackFunction);
-function callbackFunction() {}
-
-test("nome do teste2", function () {
-  console.log("Simplificando o teste");
+const calculadora = require("../models/calculadora");
+test("somar 2+ 2 deveria retornar 4", () => {
+  const resultado = calculadora.somar(2, 2);
+  expect(resultado).toBe(4);
 });
-
-test("nome do teste3", () => {
-  console.log("utilizando arrow function para simplificar ainda mais");
+test("somar 5 + 100 deveria retornar 4", () => {
+  const resultado = calculadora.somar(5, 100);
+  expect(resultado).toBe(105);
 });
-test("espero que 1 seja 1", () => {
-  expect(9).toBe(9);
+test("somar 'banana' + 100 deveria retornar error", () => {
+  const resultado = calculadora.somar("banana", 100);
+  expect(resultado).toBe("Erro");
 });
