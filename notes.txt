@@ -36,3 +36,33 @@ Copiar
 Editar
 git config --global core.editor "code --wait"
 Agora, quando você executar um git commit, o VS Code será aberto como editor gráfico. Faça as alterações no arquivo que aparece, salve (Ctrl+S) e feche o arquivo (Ctrl+W), e o commit será concluído.
+Se desejar parar todos os contêineres de uma vez, você pode usar -> docker stop $(docker ps -aq). 
+docker compose up -> para subir o container
+ctrl + c para derrubar o container
+docker compose up --detach ou docker compose up --d
+docker compose up
+Rodar a imagem em um container.
+
+docker compose up -d
+Rodar a imagem em um container em segundo plano (detached).
+
+docker compose down
+Destrói o container.
+
+docker compose up --force-recreate
+Reconstrói o container (equivalente a um compose down seguido de compose up)
+
+docker compose -f [path/arquivo] up
+Sobe a imagem a partir de um arquivo compose.yaml no caminho especificado.
+
+docker ps
+Lista todos os containers rodando.
+
+docker ps -a
+Lista todos os containers, incluindo os parados.
+
+docker logs [nome do container]
+Retorna os logs do container especificado.
+
+psql --host=localhost --username=postgres --port=5432
+Conectar ao cliente psql do PostgreSQL.
