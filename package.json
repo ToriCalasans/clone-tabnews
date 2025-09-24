@@ -7,7 +7,7 @@
     "dev": "next dev",
     "lint:fix": "prettier --write .",
     "test": "jest",
-    "test:watch": "jest --All"
+    "test:watch": "jest --watchAll"
   },
   "author": "",
   "license": "MIT",
