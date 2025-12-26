@@ -7,7 +7,7 @@
     "dev": "npm run services:up && next dev",
     "services:up": "docker compose -f infra/compose.yaml up -d",
     "services:stop": "docker compose -f infra/compose.yaml stop",
-    "services:down": "docker compose -f infra/compose.yaml down", 
+    "services:down": "docker compose -f infra/compose.yaml down",
     "lint:fix": "prettier --write .",
     "test": "jest",
     "test:watch": "jest --watchAll"
@@ -15,6 +15,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^5.3.8",
     "next": "^13.1.6",
     "pg": "^8.11.3",
     "react": "^18.2.0",
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "jest": "^29.6.2",
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "sass": "^1.97.1"
   }
 }
