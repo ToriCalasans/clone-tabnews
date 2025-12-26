@@ -10,6 +10,9 @@ function Home() {
           alt="Dinosaur"
         />
       </div>
+      <div>
+        <h2>Tenha um ótimo dia!</h2>
+      </div>
     </div>
   );
 }
